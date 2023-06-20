@@ -36,7 +36,7 @@ The Dockerized WordPress CLI supports the following command-line arguments:
 ## Create a WordPress site
 To create a new WordPress site, provide the desired site name as a command-line argument:
 
-``` $ ./wordpress_cli.py create <site_name> ```
+```shell $ ./wordpress_cli.py create <site_name> ```shell
 
 Replace <site_name> with your desired site name, such as example.com. This command will set up a new WordPress site using the latest WordPress version, running on a LEMP stack inside Docker containers. The script will automatically generate an /etc/hosts entry, mapping the site name to localhost.
 
