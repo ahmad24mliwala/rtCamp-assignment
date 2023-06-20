@@ -10,6 +10,10 @@ Create a command-line script, preferably in Python to perform the following task
 6.Add another subcommand to enable/disable the site (stopping/starting the containers)
 7.Add one more subcommand to delete the site (deleting containers and local files).
 
+### Note: 
+
+Solution or Python script for above questions are in wordpress_cli.py file.
+
 ## Prerequisites
 
 Before using the Dockerized WordPress CLI, ensure that you have the following software installed on your system:
@@ -77,5 +81,7 @@ For example, if you provide 'example.com' as the site name, the script will add 
 This mapping allows your system to resolve 'example.com' to the local machine.
 
 Note: Modifying the '/etc/hosts' file requires administrative privileges ('sudo'), so make sure to run the script accordingly.
+
+
 
 
