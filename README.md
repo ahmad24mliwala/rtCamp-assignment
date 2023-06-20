@@ -23,7 +23,9 @@ Solution or Python script for above questions are in wordpress_cli.py file.
 
 ## Prerequisites
 
-Before using the Dockerized WordPress CLI, ensure that you have the following software installed on your system:
+1. Create a One Ubuntu Virtual machine on AWS or any cloud platform to run assignment or you can run it in your own system also.
+
+2. Before using the Dockerized WordPress CLI, ensure that you have the following software installed on your system or VM:
 
 - Docker
 - Docker Compose
