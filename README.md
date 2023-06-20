@@ -54,7 +54,7 @@ To enable the site and start the Docker containers:
 
 To disable the site and stop the Docker containers:
 
-    ``` ./wordpress_cli.py disable <site_name> ```
+     ./wordpress_cli.py disable <site_name> 
 
 ## Delete the site
 
