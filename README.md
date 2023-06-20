@@ -35,7 +35,7 @@ The Dockerized WordPress CLI supports the following command-line arguments:
 
 ## Create a WordPress site
 To create a new WordPress site, provide the desired site name as a command-line argument:
-
+```shell
 $ ./wordpress_cli.py create <site_name>
 
 Replace <site_name> with your desired site name, such as example.com. This command will set up a new WordPress site using the latest WordPress version, running on a LEMP stack inside Docker containers. The script will automatically generate an /etc/hosts entry, mapping the site name to localhost.
@@ -49,17 +49,17 @@ Note: To ensure that the site name example.com points to localhost, make sure yo
 You can enable or disable the site using the following subcommands:
 
 To enable the site and start the Docker containers:
-
+```shell
 $ ./wordpress_cli.py enable <site_name>
 
 To disable the site and stop the Docker containers:
-
+```shell
 $ ./wordpress_cli.py disable <site_name>
 
 ## Delete the site
 
 To remove the site entirely, including the Docker containers and local files, use the following command:
-
+```shell
 $ ./wordpress_cli.py delete <site_name>
 
 This command will stop and delete the Docker containers, remove the 'docker-compose.yml' file, and delete the local WordPress files and database associated with the site.
@@ -71,7 +71,7 @@ Note: Deleting a site will permanently remove all data associated with it. Exerc
 To ensure that the site name you provide points to 'localhost', the Dockerized WordPress CLI will automatically create an entry in your '/etc/hosts' file.
 
 For example, if you provide 'example.com' as the site name, the script will add the following entry:
-
+```shell
 $ 127.0.0.1 example.com
 
 This mapping allows your system to resolve 'example.com' to the local machine.
